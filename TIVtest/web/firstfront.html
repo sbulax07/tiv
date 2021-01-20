@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TIV Chat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type= "text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="join-container">
+  	<header class ="join-header">
+    	<h1>TIV Chat</h1>
+    </header>
+  <p> Create a username and select a chatroom!</p> 
+
+<main class = "join-main">
+<form>
+      <div class = "form-control">
+          <label for ="username"> Username </label>
+          <input
+              type = "text"
+              name = "username"
+              id = "username"
+              placeholder ="Enter username"
+              required
+
+              />
+       </div>
+       
+       <div class = "form-control">
+       		<label for ="room">Room </label>
+            <select name="room" id = "room">
+            	<option value = "Jason's room">Jason's room </option>
+                <option value = "Tim's room">Tim's room </option>
+                <option value ="Luke's room">Luke's room </option>
+                <option value ="Mike's room">Mike's room </option>
+         	</select>
+       </div>
+       <button type = "submit" class = "btn">Join Chat </button>
+  </form>
+  
+  <style>
+    .carousel-item{
+      height:32rem;
+      background: #777777
+
+    }
+    .container {
+      position: absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      padding-bottom:50px;
+    }
+  </style>
+
+  <div id = "myChatRooms" class="carousel slide"
+  data-ride="carousel">
+    <div class= "carousel-inner">
+      <div class="carousel-item active"></div>
+      <div class="carousel_item"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class ="carousel-item active">
+    <div class="container">
+        <h1> First room</h1>
+        <p> Desciption of room 1</p>
+        <a href="#" class="btn btn-lg btn-primary">
+          Join this room
+        </a>
+    </div>
+  </div>
+
+</main>
+</div>
+</body>
+</html>
